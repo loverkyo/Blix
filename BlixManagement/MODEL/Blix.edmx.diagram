@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="605e5da68ecf4718987a30ef1b6b8e04" Name="关系图1" ZoomLevel="109">
+        <EntityTypeShape EntityType="BlixManagementModel.T_Accessories" Width="1.5" PointX="7.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_Admin" Width="1.5" PointX="12.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_Authority" Width="1.5" PointX="10" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_Brand" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_Color" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_Frame" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_FrameCategory" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_FrameMaterial" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_FrameShape" Width="1.5" PointX="3" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_FrameSize" Width="1.5" PointX="3" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_FrameSN" Width="1.5" PointX="3" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_FrameStyle" Width="1.5" PointX="3" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_FrameType" Width="1.5" PointX="9.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_Gender" Width="1.5" PointX="7.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_Lens" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_LensAdvanced" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_LensIndex" Width="1.5" PointX="0.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_LensType" Width="1.5" PointX="0.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_Module" Width="1.5" PointX="7.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_Supplier" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlixManagementModel.T_User" Width="1.5" PointX="10" PointY="2.375" IsExpanded="true" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Admin__Authori__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Admin__UserID__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Authori__Acces__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Brand__Supplie__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Frame__BrandID__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Frame__ColorID__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Lens__LensColo__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Frame__FrameCa__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Frame__FrameMa__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Frame__FrameSh__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Frame__FrameSi__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Frame__FrameSN__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Frame__FrameTy__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Frame__Supplie__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_User__GenderID__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Lens__LensAdva__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Lens__LensInde__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Lens__LensType__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Lens__Supplier__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="BlixManagementModel.FK__T_Frame__GenderI__282DF8C2" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

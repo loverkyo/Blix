@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlixManagementModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BlixManagementEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="T_Accessories" EntityType="BlixManagementModel.T_Accessories" />
+    <EntitySet Name="T_Admin" EntityType="BlixManagementModel.T_Admin" />
+    <EntitySet Name="T_Authority" EntityType="BlixManagementModel.T_Authority" />
+    <EntitySet Name="T_Brand" EntityType="BlixManagementModel.T_Brand" />
+    <EntitySet Name="T_Color" EntityType="BlixManagementModel.T_Color" />
+    <EntitySet Name="T_Frame" EntityType="BlixManagementModel.T_Frame" />
+    <EntitySet Name="T_FrameCategory" EntityType="BlixManagementModel.T_FrameCategory" />
+    <EntitySet Name="T_FrameMaterial" EntityType="BlixManagementModel.T_FrameMaterial" />
+    <EntitySet Name="T_FrameShape" EntityType="BlixManagementModel.T_FrameShape" />
+    <EntitySet Name="T_FrameSize" EntityType="BlixManagementModel.T_FrameSize" />
+    <EntitySet Name="T_FrameSN" EntityType="BlixManagementModel.T_FrameSN" />
+    <EntitySet Name="T_FrameStyle" EntityType="BlixManagementModel.T_FrameStyle" />
+    <EntitySet Name="T_FrameType" EntityType="BlixManagementModel.T_FrameType" />
+    <EntitySet Name="T_Gender" EntityType="BlixManagementModel.T_Gender" />
+    <EntitySet Name="T_Lens" EntityType="BlixManagementModel.T_Lens" />
+    <EntitySet Name="T_LensAdvanced" EntityType="BlixManagementModel.T_LensAdvanced" />
+    <EntitySet Name="T_LensIndex" EntityType="BlixManagementModel.T_LensIndex" />
+    <EntitySet Name="T_LensType" EntityType="BlixManagementModel.T_LensType" />
+    <EntitySet Name="T_Module" EntityType="BlixManagementModel.T_Module" />
+    <EntitySet Name="T_Supplier" EntityType="BlixManagementModel.T_Supplier" />
+    <EntitySet Name="T_User" EntityType="BlixManagementModel.T_User" />
+    <AssociationSet Name="FK__T_Admin__Authori__5FB337D6" Association="BlixManagementModel.FK__T_Admin__Authori__5FB337D6">
+      <End Role="T_Authority" EntitySet="T_Authority" />
+      <End Role="T_Admin" EntitySet="T_Admin" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Admin__UserID__60A75C0F" Association="BlixManagementModel.FK__T_Admin__UserID__60A75C0F">
+      <End Role="T_User" EntitySet="T_User" />
+      <End Role="T_Admin" EntitySet="T_Admin" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Authori__Acces__5DCAEF64" Association="BlixManagementModel.FK__T_Authori__Acces__5DCAEF64">
+      <End Role="T_Module" EntitySet="T_Module" />
+      <End Role="T_Authority" EntitySet="T_Authority" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Brand__Supplie__656C112C" Association="BlixManagementModel.FK__T_Brand__Supplie__656C112C">
+      <End Role="T_Supplier" EntitySet="T_Supplier" />
+      <End Role="T_Brand" EntitySet="T_Brand" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Frame__BrandID__68487DD7" Association="BlixManagementModel.FK__T_Frame__BrandID__68487DD7">
+      <End Role="T_Brand" EntitySet="T_Brand" />
+      <End Role="T_Frame" EntitySet="T_Frame" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Frame__ColorID__37A5467C" Association="BlixManagementModel.FK__T_Frame__ColorID__37A5467C">
+      <End Role="T_Color" EntitySet="T_Color" />
+      <End Role="T_Frame" EntitySet="T_Frame" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Lens__LensColo__48CFD27E" Association="BlixManagementModel.FK__T_Lens__LensColo__48CFD27E">
+      <End Role="T_Color" EntitySet="T_Color" />
+      <End Role="T_Lens" EntitySet="T_Lens" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Frame__FrameCa__3C69FB99" Association="BlixManagementModel.FK__T_Frame__FrameCa__3C69FB99">
+      <End Role="T_FrameCategory" EntitySet="T_FrameCategory" />
+      <End Role="T_Frame" EntitySet="T_Frame" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Frame__FrameMa__3A81B327" Association="BlixManagementModel.FK__T_Frame__FrameMa__3A81B327">
+      <End Role="T_FrameMaterial" EntitySet="T_FrameMaterial" />
+      <End Role="T_Frame" EntitySet="T_Frame" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Frame__FrameSh__398D8EEE" Association="BlixManagementModel.FK__T_Frame__FrameSh__398D8EEE">
+      <End Role="T_FrameShape" EntitySet="T_FrameShape" />
+      <End Role="T_Frame" EntitySet="T_Frame" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Frame__FrameSi__3B75D760" Association="BlixManagementModel.FK__T_Frame__FrameSi__3B75D760">
+      <End Role="T_FrameSize" EntitySet="T_FrameSize" />
+      <End Role="T_Frame" EntitySet="T_Frame" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Frame__FrameSN__36B12243" Association="BlixManagementModel.FK__T_Frame__FrameSN__36B12243">
+      <End Role="T_FrameSN" EntitySet="T_FrameSN" />
+      <End Role="T_Frame" EntitySet="T_Frame" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Frame__FrameTy__38996AB5" Association="BlixManagementModel.FK__T_Frame__FrameTy__38996AB5">
+      <End Role="T_FrameStyle" EntitySet="T_FrameStyle" />
+      <End Role="T_Frame" EntitySet="T_Frame" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Frame__Supplie__3D5E1FD2" Association="BlixManagementModel.FK__T_Frame__Supplie__3D5E1FD2">
+      <End Role="T_Supplier" EntitySet="T_Supplier" />
+      <End Role="T_Frame" EntitySet="T_Frame" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_User__GenderID__5EBF139D" Association="BlixManagementModel.FK__T_User__GenderID__5EBF139D">
+      <End Role="T_Gender" EntitySet="T_Gender" />
+      <End Role="T_User" EntitySet="T_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Lens__LensAdva__47DBAE45" Association="BlixManagementModel.FK__T_Lens__LensAdva__47DBAE45">
+      <End Role="T_LensAdvanced" EntitySet="T_LensAdvanced" />
+      <End Role="T_Lens" EntitySet="T_Lens" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Lens__LensInde__46E78A0C" Association="BlixManagementModel.FK__T_Lens__LensInde__46E78A0C">
+      <End Role="T_LensIndex" EntitySet="T_LensIndex" />
+      <End Role="T_Lens" EntitySet="T_Lens" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Lens__LensType__45F365D3" Association="BlixManagementModel.FK__T_Lens__LensType__45F365D3">
+      <End Role="T_LensType" EntitySet="T_LensType" />
+      <End Role="T_Lens" EntitySet="T_Lens" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Lens__Supplier__49C3F6B7" Association="BlixManagementModel.FK__T_Lens__Supplier__49C3F6B7">
+      <End Role="T_Supplier" EntitySet="T_Supplier" />
+      <End Role="T_Lens" EntitySet="T_Lens" />
+    </AssociationSet>
+    <AssociationSet Name="FK__T_Frame__GenderI__282DF8C2" Association="BlixManagementModel.FK__T_Frame__GenderI__282DF8C2">
+      <End Role="T_Gender" EntitySet="T_Gender" />
+      <End Role="T_Frame" EntitySet="T_Frame" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="T_Accessories">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CostRMB" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CostUSD" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PriceRMB" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PriceUSD" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PictureFolderPath" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SupplierID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_Admin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Username" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="AuthorityID" Type="Int32" />
+    <Property Name="UserID" Type="Int32" />
+    <NavigationProperty Name="T_Authority" Relationship="BlixManagementModel.FK__T_Admin__Authori__5FB337D6" FromRole="T_Admin" ToRole="T_Authority" />
+    <NavigationProperty Name="T_User" Relationship="BlixManagementModel.FK__T_Admin__UserID__60A75C0F" FromRole="T_Admin" ToRole="T_User" />
+  </EntityType>
+  <EntityType Name="T_Authority">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="AuthorityLevel" Type="Int32" Nullable="false" />
+    <Property Name="AccesModuleID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="T_Admin" Relationship="BlixManagementModel.FK__T_Admin__Authori__5FB337D6" FromRole="T_Authority" ToRole="T_Admin" />
+    <NavigationProperty Name="T_Module" Relationship="BlixManagementModel.FK__T_Authori__Acces__5DCAEF64" FromRole="T_Authority" ToRole="T_Module" />
+  </EntityType>
+  <EntityType Name="T_Brand">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Brand" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SupplierID" Type="Int32" Nullable="false" />
+    <Property Name="Goods" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="T_Supplier" Relationship="BlixManagementModel.FK__T_Brand__Supplie__656C112C" FromRole="T_Brand" ToRole="T_Supplier" />
+    <NavigationProperty Name="T_Frame" Relationship="BlixManagementModel.FK__T_Frame__BrandID__68487DD7" FromRole="T_Brand" ToRole="T_Frame" />
+  </EntityType>
+  <EntityType Name="T_Color">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Color" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="T_Frame" Relationship="BlixManagementModel.FK__T_Frame__ColorID__37A5467C" FromRole="T_Color" ToRole="T_Frame" />
+    <NavigationProperty Name="T_Lens" Relationship="BlixManagementModel.FK__T_Lens__LensColo__48CFD27E" FromRole="T_Color" ToRole="T_Lens" />
+    <Property Type="String" Name="Value" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="T_Frame">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FrameSNID" Type="Int32" />
+    <Property Name="ColorID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CostRMB" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PriceUSD" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="LensWidth" Type="Double" Nullable="false" />
+    <Property Name="FrameWidth" Type="Double" Nullable="false" />
+    <Property Name="TempleLength" Type="Double" Nullable="false" />
+    <Property Name="NoseBridge" Type="Double" Nullable="false" />
+    <Property Name="Weight" Type="Double" />
+    <Property Name="IfSpring" Type="Boolean" />
+    <Property Name="FrameTypeID" Type="Int32" />
+    <Property Name="FrameShapeID" Type="Int32" />
+    <Property Name="FrameMaterialID" Type="Int32" />
+    <Property Name="FrameSizeID" Type="Int32" />
+    <Property Name="InitialInformation" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IfBiofocal" Type="Boolean" />
+    <Property Name="FrameCategoryID" Type="Int32" />
+    <Property Name="FrameStyleIDs" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="CostUSD" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PriceRMB" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="SupplierID" Type="Int32" />
+    <Property Name="Other" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PictureFolderPath" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="BrandID" Type="Int32" />
+    <NavigationProperty Name="T_Brand" Relationship="BlixManagementModel.FK__T_Frame__BrandID__68487DD7" FromRole="T_Frame" ToRole="T_Brand" />
+    <NavigationProperty Name="T_Color" Relationship="BlixManagementModel.FK__T_Frame__ColorID__37A5467C" FromRole="T_Frame" ToRole="T_Color" />
+    <NavigationProperty Name="T_FrameCategory" Relationship="BlixManagementModel.FK__T_Frame__FrameCa__3C69FB99" FromRole="T_Frame" ToRole="T_FrameCategory" />
+    <NavigationProperty Name="T_FrameMaterial" Relationship="BlixManagementModel.FK__T_Frame__FrameMa__3A81B327" FromRole="T_Frame" ToRole="T_FrameMaterial" />
+    <NavigationProperty Name="T_FrameShape" Relationship="BlixManagementModel.FK__T_Frame__FrameSh__398D8EEE" FromRole="T_Frame" ToRole="T_FrameShape" />
+    <NavigationProperty Name="T_FrameSize" Relationship="BlixManagementModel.FK__T_Frame__FrameSi__3B75D760" FromRole="T_Frame" ToRole="T_FrameSize" />
+    <NavigationProperty Name="T_FrameSN" Relationship="BlixManagementModel.FK__T_Frame__FrameSN__36B12243" FromRole="T_Frame" ToRole="T_FrameSN" />
+    <NavigationProperty Name="T_FrameStyle" Relationship="BlixManagementModel.FK__T_Frame__FrameTy__38996AB5" FromRole="T_Frame" ToRole="T_FrameStyle" />
+    <NavigationProperty Name="T_Supplier" Relationship="BlixManagementModel.FK__T_Frame__Supplie__3D5E1FD2" FromRole="T_Frame" ToRole="T_Supplier" />
+    <Property Type="Int32" Name="GenderID" />
+    <NavigationProperty Name="T_Gender" Relationship="BlixManagementModel.FK__T_Frame__GenderI__282DF8C2" FromRole="T_Frame" ToRole="T_Gender" />
+    <Property Type="Boolean" Name="IsPrepared" />
+    <Property Type="Double" Name="LensHeight" Nullable="false" />
+    <Property Type="String" Name="Description_CN" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatDate" Nullable="false" Precision="7" />
+    <Property Type="DateTime" Name="UpdateDate" Nullable="false" Precision="7" />
+  </EntityType>
+  <EntityType Name="T_FrameCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="FrameCategory" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="T_Frame" Relationship="BlixManagementModel.FK__T_Frame__FrameCa__3C69FB99" FromRole="T_FrameCategory" ToRole="T_Frame" />
+  </EntityType>
+  <EntityType Name="T_FrameMaterial">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Material" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="T_Frame" Relationship="BlixManagementModel.FK__T_Frame__FrameMa__3A81B327" FromRole="T_FrameMaterial" ToRole="T_Frame" />
+  </EntityType>
+  <EntityType Name="T_FrameShape">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Shape" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="T_Frame" Relationship="BlixManagementModel.FK__T_Frame__FrameSh__398D8EEE" FromRole="T_FrameShape" ToRole="T_Frame" />
+  </EntityType>
+  <EntityType Name="T_FrameSize">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Size" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="T_Frame" Relationship="BlixManagementModel.FK__T_Frame__FrameSi__3B75D760" FromRole="T_FrameSize" ToRole="T_Frame" />
+  </EntityType>
+  <EntityType Name="T_FrameSN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="SN" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="T_Frame" Relationship="BlixManagementModel.FK__T_Frame__FrameSN__36B12243" FromRole="T_FrameSN" ToRole="T_Frame" />
+  </EntityType>
+  <EntityType Name="T_FrameStyle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Style" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="T_Frame" Relationship="BlixManagementModel.FK__T_Frame__FrameTy__38996AB5" FromRole="T_FrameStyle" ToRole="T_Frame" />
+  </EntityType>
+  <EntityType Name="T_FrameType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="FrameType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="T_Gender">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Gender" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="T_User" Relationship="BlixManagementModel.FK__T_User__GenderID__5EBF139D" FromRole="T_Gender" ToRole="T_User" />
+    <NavigationProperty Name="T_Frame" Relationship="BlixManagementModel.FK__T_Frame__GenderI__282DF8C2" FromRole="T_Gender" ToRole="T_Frame" />
+  </EntityType>
+  <EntityType Name="T_Lens">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="LensTypeID" Type="Int32" />
+    <Property Name="LensIndexID" Type="Int32" />
+    <Property Name="LensAdvancedID" Type="Int32" />
+    <Property Name="LensColorID" Type="Int32" />
+    <Property Name="LensCostRMB" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="LensAdvancedPriceRMB" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="LensTotalPriceUSD" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="LensCostUSD" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="LensTotalPriceRMB" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="LensAdvancedPriceUSD" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="SupplierID" Type="Int32" />
+    <NavigationProperty Name="T_Color" Relationship="BlixManagementModel.FK__T_Lens__LensColo__48CFD27E" FromRole="T_Lens" ToRole="T_Color" />
+    <NavigationProperty Name="T_LensAdvanced" Relationship="BlixManagementModel.FK__T_Lens__LensAdva__47DBAE45" FromRole="T_Lens" ToRole="T_LensAdvanced" />
+    <NavigationProperty Name="T_LensIndex" Relationship="BlixManagementModel.FK__T_Lens__LensInde__46E78A0C" FromRole="T_Lens" ToRole="T_LensIndex" />
+    <NavigationProperty Name="T_LensType" Relationship="BlixManagementModel.FK__T_Lens__LensType__45F365D3" FromRole="T_Lens" ToRole="T_LensType" />
+    <NavigationProperty Name="T_Supplier" Relationship="BlixManagementModel.FK__T_Lens__Supplier__49C3F6B7" FromRole="T_Lens" ToRole="T_Supplier" />
+  </EntityType>
+  <EntityType Name="T_LensAdvanced">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="LensAdvanced" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LensAdvancedPriceRMB" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="LensAdvancedPriceUSD" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="T_Lens" Relationship="BlixManagementModel.FK__T_Lens__LensAdva__47DBAE45" FromRole="T_LensAdvanced" ToRole="T_Lens" />
+  </EntityType>
+  <EntityType Name="T_LensIndex">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="LensIndex" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LensIndexPriceRMB" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="LensIndexPriceUSD" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="T_Lens" Relationship="BlixManagementModel.FK__T_Lens__LensInde__46E78A0C" FromRole="T_LensIndex" ToRole="T_Lens" />
+  </EntityType>
+  <EntityType Name="T_LensType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="LensType" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="LensTypePriceRMB" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="LensTypePriceUSD" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="T_Lens" Relationship="BlixManagementModel.FK__T_Lens__LensType__45F365D3" FromRole="T_LensType" ToRole="T_Lens" />
+  </EntityType>
+  <EntityType Name="T_Module">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ModuleName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="T_Authority" Relationship="BlixManagementModel.FK__T_Authori__Acces__5DCAEF64" FromRole="T_Module" ToRole="T_Authority" />
+  </EntityType>
+  <EntityType Name="T_Supplier">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Telephone" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ZipCode" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Province" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="QQ" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="MSN" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Website" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Other" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Goods" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="T_Brand" Relationship="BlixManagementModel.FK__T_Brand__Supplie__656C112C" FromRole="T_Supplier" ToRole="T_Brand" />
+    <NavigationProperty Name="T_Frame" Relationship="BlixManagementModel.FK__T_Frame__Supplie__3D5E1FD2" FromRole="T_Supplier" ToRole="T_Frame" />
+    <NavigationProperty Name="T_Lens" Relationship="BlixManagementModel.FK__T_Lens__Supplier__49C3F6B7" FromRole="T_Supplier" ToRole="T_Lens" />
+    <Property Type="String" Name="LogoImg" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="GenderID" Type="Int32" Nullable="false" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="Telephone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="QQ" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="ZipCode" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="T_Admin" Relationship="BlixManagementModel.FK__T_Admin__UserID__60A75C0F" FromRole="T_User" ToRole="T_Admin" />
+    <NavigationProperty Name="T_Gender" Relationship="BlixManagementModel.FK__T_User__GenderID__5EBF139D" FromRole="T_User" ToRole="T_Gender" />
+  </EntityType>
+  <Association Name="FK__T_Admin__Authori__5FB337D6">
+    <End Role="T_Authority" Type="BlixManagementModel.T_Authority" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Admin" Type="BlixManagementModel.T_Admin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Authority">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Admin">
+        <PropertyRef Name="AuthorityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Admin__UserID__60A75C0F">
+    <End Role="T_User" Type="BlixManagementModel.T_User" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Admin" Type="BlixManagementModel.T_Admin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Admin">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Authori__Acces__5DCAEF64">
+    <End Role="T_Module" Type="BlixManagementModel.T_Module" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Authority" Type="BlixManagementModel.T_Authority" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Module">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Authority">
+        <PropertyRef Name="AccesModuleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Brand__Supplie__656C112C">
+    <End Role="T_Supplier" Type="BlixManagementModel.T_Supplier" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Brand" Type="BlixManagementModel.T_Brand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Supplier">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Brand">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Frame__BrandID__68487DD7">
+    <End Role="T_Brand" Type="BlixManagementModel.T_Brand" Multiplicity="0..1" />
+    <End Role="T_Frame" Type="BlixManagementModel.T_Frame" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Brand">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Frame">
+        <PropertyRef Name="BrandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Frame__ColorID__37A5467C">
+    <End Role="T_Color" Type="BlixManagementModel.T_Color" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Frame" Type="BlixManagementModel.T_Frame" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Color">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Frame">
+        <PropertyRef Name="ColorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Lens__LensColo__48CFD27E">
+    <End Role="T_Color" Type="BlixManagementModel.T_Color" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Lens" Type="BlixManagementModel.T_Lens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Color">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Lens">
+        <PropertyRef Name="LensColorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Frame__FrameCa__3C69FB99">
+    <End Role="T_FrameCategory" Type="BlixManagementModel.T_FrameCategory" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Frame" Type="BlixManagementModel.T_Frame" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_FrameCategory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Frame">
+        <PropertyRef Name="FrameCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Frame__FrameMa__3A81B327">
+    <End Role="T_FrameMaterial" Type="BlixManagementModel.T_FrameMaterial" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Frame" Type="BlixManagementModel.T_Frame" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_FrameMaterial">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Frame">
+        <PropertyRef Name="FrameMaterialID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Frame__FrameSh__398D8EEE">
+    <End Role="T_FrameShape" Type="BlixManagementModel.T_FrameShape" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Frame" Type="BlixManagementModel.T_Frame" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_FrameShape">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Frame">
+        <PropertyRef Name="FrameShapeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Frame__FrameSi__3B75D760">
+    <End Role="T_FrameSize" Type="BlixManagementModel.T_FrameSize" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Frame" Type="BlixManagementModel.T_Frame" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_FrameSize">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Frame">
+        <PropertyRef Name="FrameSizeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Frame__FrameSN__36B12243">
+    <End Role="T_FrameSN" Type="BlixManagementModel.T_FrameSN" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Frame" Type="BlixManagementModel.T_Frame" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_FrameSN">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Frame">
+        <PropertyRef Name="FrameSNID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Frame__FrameTy__38996AB5">
+    <End Role="T_FrameStyle" Type="BlixManagementModel.T_FrameStyle" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Frame" Type="BlixManagementModel.T_Frame" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_FrameStyle">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Frame">
+        <PropertyRef Name="FrameTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Frame__Supplie__3D5E1FD2">
+    <End Role="T_Supplier" Type="BlixManagementModel.T_Supplier" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Frame" Type="BlixManagementModel.T_Frame" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Supplier">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Frame">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_User__GenderID__5EBF139D">
+    <End Role="T_Gender" Type="BlixManagementModel.T_Gender" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_User" Type="BlixManagementModel.T_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Gender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_User">
+        <PropertyRef Name="GenderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Lens__LensAdva__47DBAE45">
+    <End Role="T_LensAdvanced" Type="BlixManagementModel.T_LensAdvanced" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Lens" Type="BlixManagementModel.T_Lens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_LensAdvanced">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Lens">
+        <PropertyRef Name="LensAdvancedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Lens__LensInde__46E78A0C">
+    <End Role="T_LensIndex" Type="BlixManagementModel.T_LensIndex" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Lens" Type="BlixManagementModel.T_Lens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_LensIndex">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Lens">
+        <PropertyRef Name="LensIndexID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Lens__LensType__45F365D3">
+    <End Role="T_LensType" Type="BlixManagementModel.T_LensType" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Lens" Type="BlixManagementModel.T_Lens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_LensType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Lens">
+        <PropertyRef Name="LensTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Lens__Supplier__49C3F6B7">
+    <End Role="T_Supplier" Type="BlixManagementModel.T_Supplier" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="T_Lens" Type="BlixManagementModel.T_Lens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Supplier">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Lens">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__T_Frame__GenderI__282DF8C2">
+    <End Type="BlixManagementModel.T_Gender" Role="T_Gender" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="BlixManagementModel.T_Frame" Role="T_Frame" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Gender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_Frame">
+        <PropertyRef Name="GenderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

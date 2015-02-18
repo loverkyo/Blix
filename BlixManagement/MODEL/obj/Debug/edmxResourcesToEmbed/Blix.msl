@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlixManagementModelStoreContainer" CdmEntityContainer="BlixManagementEntities">
+    <EntitySetMapping Name="T_Accessories">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_Accessories">
+        <MappingFragment StoreEntitySet="T_Accessories">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CostRMB" ColumnName="CostRMB" />
+          <ScalarProperty Name="CostUSD" ColumnName="CostUSD" />
+          <ScalarProperty Name="PriceRMB" ColumnName="PriceRMB" />
+          <ScalarProperty Name="PriceUSD" ColumnName="PriceUSD" />
+          <ScalarProperty Name="PictureFolderPath" ColumnName="PictureFolderPath" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Admin">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_Admin">
+        <MappingFragment StoreEntitySet="T_Admin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="AuthorityID" ColumnName="AuthorityID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Authority">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_Authority">
+        <MappingFragment StoreEntitySet="T_Authority">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AuthorityLevel" ColumnName="AuthorityLevel" />
+          <ScalarProperty Name="AccesModuleID" ColumnName="AccesModuleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Brand">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_Brand">
+        <MappingFragment StoreEntitySet="T_Brand">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="Goods" ColumnName="Goods" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Color">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_Color">
+        <MappingFragment StoreEntitySet="T_Color">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Frame">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_Frame">
+        <MappingFragment StoreEntitySet="T_Frame">
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="CreatDate" ColumnName="CreatDate" />
+          <ScalarProperty Name="Description_CN" ColumnName="Description_CN" />
+          <ScalarProperty Name="LensHeight" ColumnName="LensHeight" />
+          <ScalarProperty Name="IsPrepared" ColumnName="IsPrepared" />
+          <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FrameSNID" ColumnName="FrameSNID" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CostRMB" ColumnName="CostRMB" />
+          <ScalarProperty Name="PriceUSD" ColumnName="PriceUSD" />
+          <ScalarProperty Name="LensWidth" ColumnName="LensWidth" />
+          <ScalarProperty Name="FrameWidth" ColumnName="FrameWidth" />
+          <ScalarProperty Name="TempleLength" ColumnName="TempleLength" />
+          <ScalarProperty Name="NoseBridge" ColumnName="NoseBridge" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="IfSpring" ColumnName="IfSpring" />
+          <ScalarProperty Name="FrameTypeID" ColumnName="FrameTypeID" />
+          <ScalarProperty Name="FrameShapeID" ColumnName="FrameShapeID" />
+          <ScalarProperty Name="FrameMaterialID" ColumnName="FrameMaterialID" />
+          <ScalarProperty Name="FrameSizeID" ColumnName="FrameSizeID" />
+          <ScalarProperty Name="InitialInformation" ColumnName="InitialInformation" />
+          <ScalarProperty Name="IfBiofocal" ColumnName="IfBiofocal" />
+          <ScalarProperty Name="FrameCategoryID" ColumnName="FrameCategoryID" />
+          <ScalarProperty Name="FrameStyleIDs" ColumnName="FrameStyleIDs" />
+          <ScalarProperty Name="CostUSD" ColumnName="CostUSD" />
+          <ScalarProperty Name="PriceRMB" ColumnName="PriceRMB" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="Other" ColumnName="Other" />
+          <ScalarProperty Name="PictureFolderPath" ColumnName="PictureFolderPath" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FrameCategory">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_FrameCategory">
+        <MappingFragment StoreEntitySet="T_FrameCategory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FrameCategory" ColumnName="FrameCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FrameMaterial">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_FrameMaterial">
+        <MappingFragment StoreEntitySet="T_FrameMaterial">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FrameShape">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_FrameShape">
+        <MappingFragment StoreEntitySet="T_FrameShape">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Shape" ColumnName="Shape" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FrameSize">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_FrameSize">
+        <MappingFragment StoreEntitySet="T_FrameSize">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FrameSN">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_FrameSN">
+        <MappingFragment StoreEntitySet="T_FrameSN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FrameStyle">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_FrameStyle">
+        <MappingFragment StoreEntitySet="T_FrameStyle">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Style" ColumnName="Style" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FrameType">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_FrameType">
+        <MappingFragment StoreEntitySet="T_FrameType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FrameType" ColumnName="FrameType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Gender">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_Gender">
+        <MappingFragment StoreEntitySet="T_Gender">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Lens">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_Lens">
+        <MappingFragment StoreEntitySet="T_Lens">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LensTypeID" ColumnName="LensTypeID" />
+          <ScalarProperty Name="LensIndexID" ColumnName="LensIndexID" />
+          <ScalarProperty Name="LensAdvancedID" ColumnName="LensAdvancedID" />
+          <ScalarProperty Name="LensColorID" ColumnName="LensColorID" />
+          <ScalarProperty Name="LensCostRMB" ColumnName="LensCostRMB" />
+          <ScalarProperty Name="LensAdvancedPriceRMB" ColumnName="LensAdvancedPriceRMB" />
+          <ScalarProperty Name="LensTotalPriceUSD" ColumnName="LensTotalPriceUSD" />
+          <ScalarProperty Name="LensCostUSD" ColumnName="LensCostUSD" />
+          <ScalarProperty Name="LensTotalPriceRMB" ColumnName="LensTotalPriceRMB" />
+          <ScalarProperty Name="LensAdvancedPriceUSD" ColumnName="LensAdvancedPriceUSD" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LensAdvanced">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_LensAdvanced">
+        <MappingFragment StoreEntitySet="T_LensAdvanced">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LensAdvanced" ColumnName="LensAdvanced" />
+          <ScalarProperty Name="LensAdvancedPriceRMB" ColumnName="LensAdvancedPriceRMB" />
+          <ScalarProperty Name="LensAdvancedPriceUSD" ColumnName="LensAdvancedPriceUSD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LensIndex">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_LensIndex">
+        <MappingFragment StoreEntitySet="T_LensIndex">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LensIndex" ColumnName="LensIndex" />
+          <ScalarProperty Name="LensIndexPriceRMB" ColumnName="LensIndexPriceRMB" />
+          <ScalarProperty Name="LensIndexPriceUSD" ColumnName="LensIndexPriceUSD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LensType">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_LensType">
+        <MappingFragment StoreEntitySet="T_LensType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LensType" ColumnName="LensType" />
+          <ScalarProperty Name="LensTypePriceRMB" ColumnName="LensTypePriceRMB" />
+          <ScalarProperty Name="LensTypePriceUSD" ColumnName="LensTypePriceUSD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Module">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_Module">
+        <MappingFragment StoreEntitySet="T_Module">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Supplier">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_Supplier">
+        <MappingFragment StoreEntitySet="T_Supplier">
+          <ScalarProperty Name="LogoImg" ColumnName="LogoImg" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="QQ" ColumnName="QQ" />
+          <ScalarProperty Name="MSN" ColumnName="MSN" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Other" ColumnName="Other" />
+          <ScalarProperty Name="Goods" ColumnName="Goods" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_User">
+      <EntityTypeMapping TypeName="BlixManagementModel.T_User">
+        <MappingFragment StoreEntitySet="T_User">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="QQ" ColumnName="QQ" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

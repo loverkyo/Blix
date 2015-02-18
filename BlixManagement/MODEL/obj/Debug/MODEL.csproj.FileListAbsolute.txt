@@ -1,0 +1,9 @@
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\MODEL\bin\Debug\MODEL.dll.config
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\MODEL\bin\Debug\MODEL.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\MODEL\bin\Debug\MODEL.pdb
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\MODEL\bin\Debug\EntityFramework.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\MODEL\bin\Debug\EntityFramework.xml
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\MODEL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\MODEL\obj\Debug\MODEL.csprojResolveAssemblyReference.cache
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\MODEL\obj\Debug\MODEL.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\MODEL\obj\Debug\MODEL.pdb

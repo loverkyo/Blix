@@ -1,0 +1,5 @@
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\IDAL\bin\Debug\IDAL.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\IDAL\bin\Debug\IDAL.pdb
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\IDAL\obj\Debug\IDAL.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\IDAL\obj\Debug\IDAL.pdb

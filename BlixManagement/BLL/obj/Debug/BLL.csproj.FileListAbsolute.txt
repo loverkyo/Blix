@@ -1,0 +1,15 @@
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\bin\Debug\BLL.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\bin\Debug\BLL.pdb
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\bin\Debug\DAL.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\bin\Debug\MODEL.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\bin\Debug\EntityFramework.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\bin\Debug\DAL.pdb
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\bin\Debug\MODEL.pdb
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\bin\Debug\EntityFramework.xml
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\obj\Debug\BLL.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\obj\Debug\BLL.pdb
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\bin\Debug\NPOI.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\我的程序\BLIX\BLIX产品管理系统1.0\BlixManagement\BLL\bin\Debug\NPOI.xml

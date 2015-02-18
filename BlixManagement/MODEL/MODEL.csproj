@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0252E4C4-1E4E-46F4-808E-D1BBF20A8271}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MODEL</RootNamespace>
+    <AssemblyName>MODEL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blix.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Blix.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Blix.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Blix.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Blix.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T_Accessories.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Admin.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Authority.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Brand.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Color.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Frame.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FrameCategory.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FrameMaterial.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FrameShape.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FrameSize.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FrameSN.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FrameStyle.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FrameType.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Gender.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Lens.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_LensAdvanced.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_LensIndex.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_LensType.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Module.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Supplier.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_User.cs">
+      <DependentUpon>Blix.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Blix.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Blix.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Blix.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Blix.edmx</DependentUpon>
+      <LastGenOutput>Blix.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Blix.edmx.diagram">
+      <DependentUpon>Blix.edmx</DependentUpon>
+    </None>
+    <None Include="Blix.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Blix.edmx</DependentUpon>
+      <LastGenOutput>Blix.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
